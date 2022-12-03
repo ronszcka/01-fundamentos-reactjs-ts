@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { Post } from './components/Post';
@@ -8,7 +10,7 @@ import './global.css';
 
 const posts = [
   {
-    id: 1,
+    id: uuidv4(),
     author: {
       avatarUrl: "https://github.com/diego3g.png",
       name: "Diego Fernandes",
@@ -22,7 +24,7 @@ const posts = [
     publishedAt: new Date("2022-11-23 10:00:00")
   },
   {
-    id: 2,
+    id: uuidv4(),
     author: {
       avatarUrl: "https://github.com/maykbrito.png",
       name: "Mayk Brito",
