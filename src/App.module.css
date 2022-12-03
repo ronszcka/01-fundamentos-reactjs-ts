@@ -1,0 +1,37 @@
+.wrapper {
+
+    max-width: 1120rem;
+
+    margin: 32rem auto;
+
+    padding: 0 16rem;
+
+
+    display: grid;
+
+    grid-template-columns: 256rem 1fr;
+
+    gap: 32rem;
+
+    align-items: flex-start;
+
+}
+
+@media (max-width: 768px) {
+
+    html {
+        /* font-size: 10px; */
+    
+        /* 10px / 16px = 0.625 = 62.5% */
+        /* 1px / 16px = 0.0625 = 6.25% */
+        /* Percentage of user's browser font-size setting */
+        font-size: 5%;
+    }
+
+    .wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
